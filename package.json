@@ -1,0 +1,16 @@
+{
+  "name": "hyconlibrary",
+  "email": "pjt3591oo@gmail.com",
+  "version": "1.0.0",
+  "description": "hycon 연동 라이브러리",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hycon",
+    "api"
+  ],
+  "author": "pjt3591oo",
+  "license": "ISC"
+}

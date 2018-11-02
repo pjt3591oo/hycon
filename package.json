@@ -5,7 +5,10 @@
   "description": "hycon 연동 라이브러리",
   "main": "index.js",
   "scripts": {
-    "test-node": "node ./test/node.js"
+    "test-node": "node ./test/node.js",
+    "test-account": "node ./test/account.js",
+    "test-block": "node ./test/block.js",
+    "test-transaction": "node ./test/transaction.js"
   },
   "keywords": [
     "hycon",

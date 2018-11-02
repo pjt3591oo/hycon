@@ -41,10 +41,37 @@ class Hycon {
         })
     }
 
-    async getBalance(address) {
-        return await this.address.getBalance({address: address})
+    async _getAddressInfo(address) {
+        return await this.address.getBalance({
+            address: address
+        })
     }
 
+    async getBalance(address) {
+        let balance = await this._getAddressInfo(address)
+        return balance.balance
+    }
+
+    async sendTransaction({privateKey, from, to, amount, fee}) {
+        return await this.transaction.signedtx({
+            privateKey: privateKey, 
+            from: from, 
+            to: to, 
+            amount: amount, 
+            fee: fee,
+            addressInfo: await this._getAddressInfo(from)
+        })
+    }
+
+    async getTransaction({txHash}) {
+        let tx = await this.transaction.getTransaction({txHash: txHash})
+
+        if(tx.status && tx.status != 200) {
+            throw Error(JSON.stringify(tx))
+        }
+
+        return tx
+    }
 }
 
 module.exports = Hycon;

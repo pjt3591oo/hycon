@@ -153,6 +153,16 @@ function sleep(ms){
 * result
 
 ```bash
+{ hash: 'CfdSaZSwweeiXZyHRiKjinzZxnc1yXf5X1GqeHX7qVa8',
+  amount: '10',
+  fee: '1',
+  from: 'HNw2nrmkXdpE8sCD26VyMvjLg5RsBRUY',
+  to: 'H44r8nB1Lk7NGruSmdbWE6VSmMzXn8vT1',
+  blockHash: 'DTinFGuYKjeXZ3Eb4TqzcUEE2FWVGqFfproG2oLEXvN2',
+  nonce: 457,
+  receiveTime: 1541127506880,
+  estimated: '11',
+  confirmation: 0 }
 ```
 
 #### block

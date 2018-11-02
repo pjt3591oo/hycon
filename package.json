@@ -5,7 +5,7 @@
   "description": "hycon 연동 라이브러리",
   "main": "index.js",
   "scripts": {
-    "test": "node ./test/t.js"
+    "test-node": "node ./test/node.js"
   },
   "keywords": [
     "hycon",

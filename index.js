@@ -29,10 +29,21 @@ class Hycon {
         return this.providerUrl
     }
 
-    async newAccount() {
+    async newAccount({name, hint, password}) {
+        if (!name || !hint || !password) {
+            throw Error("params insufficiency")
+        }
 
+        return await this.address.generateWallet({
+            name: name,
+            hint: hint,
+            password: password
+        })
     }
 
+    async getBalance(address) {
+        return await this.address.getBalance({address: address})
+    }
 
 }
 

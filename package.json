@@ -1,5 +1,5 @@
 {
-  "name": "hycon",
+  "name": "@pjt3591oo/hycon",
   "homepage": "https://github.com/pjt3591oo/hycon",
   "version": "1.0.0",
   "description": "hycon 연동 라이브러리",
@@ -20,9 +20,9 @@
     "email": "pjt3591oo@gmail.com"
   },
   "author": "jeongtae park <pjt3591oo@gmail.com>",
-  
   "license": "ISC",
   "dependencies": {
+    "request": "^2.88.0",
     "request-promise": "^4.2.2"
   }
 }

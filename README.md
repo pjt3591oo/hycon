@@ -5,12 +5,14 @@
 ## Table Of Contents
 
 * [Installation](##Installation)
-* [Node 연결](#node)
+* [node 연결](#node)
 * [account](#account)
 * [transaction](#transaction)
 * [block](#block)
 
 ## Installation
+
+* 1. 소스코드 직접 받기
 
 ```bash
 # 다음 라이브러리가 필요합니다.
@@ -20,6 +22,19 @@ $ npm install --save request-promise
 # hycon 코드설치
 $ git clone https://github.com/pjt3591oo/hycon.git ./node_modules/hycon
 ```
+
+* 2. npm으로 받기
+
+만약, npm으로 받을경우 프로젝트 이름이 pjt3591oo이기 때문에 모듈 가져올 때 **```require('pjt3591oo')```** 으로 해야함
+
+[npm 저장소 바로가기](https://www.npmjs.com/package/pjt3591oo)
+
+```bash
+# 다음 라이브러리가 필요합니다.
+$ npm install --save pjt3591oo
+```
+
+
 
 ## Guide
 

@@ -12,6 +12,7 @@ class Hycon {
         this.address = new Address(this.providerUrl)
         this.transaction = new Transaction(this.providerUrl)
         this.block = new Block(this.providerUrl)
+
     }
 
     set setProvider(providerUrl) {

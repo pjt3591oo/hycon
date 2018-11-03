@@ -1,7 +1,7 @@
 {
-  "name": "@pjt3591oo/hycon",
+  "name": "pjt3591oo",
   "homepage": "https://github.com/pjt3591oo/hycon",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "hycon 연동 라이브러리",
   "main": "index.js",
   "scripts": {

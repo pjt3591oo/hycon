@@ -13,11 +13,12 @@
 ## Installation
 
 ```bash
-$ npm install --save hycon/library
-
 # 다음 라이브러리가 필요합니다.
 $ npm install --save request
 $ npm install --save request-promise
+
+# hycon 코드설치
+$ git clone https://github.com/pjt3591oo/hycon.git ./node_modules/hycon
 ```
 
 ## Guide

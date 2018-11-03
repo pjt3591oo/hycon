@@ -72,6 +72,23 @@ class Hycon {
 
         return tx
     }
+
+    async getBlock({height}) {
+        let blockInfo = await this.block.getBlock({
+            height: height || 0
+        })
+
+        return blockInfo
+    }
+
+    async getBlocks({pagination}) {
+        let blockInfo = await this.block.getBlocks({
+            pagination: pagination || 0
+        })
+
+        return blockInfo.blocks
+    }
+
 }
 
 module.exports = Hycon;

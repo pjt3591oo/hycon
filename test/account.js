@@ -12,8 +12,15 @@ let hycon = new Hycon('http://127.0.0.1:2442');
         })
         console.log(wallet)
         
-        let balance = await hycon.getBalance(wallet.address)
+        let balance = await hycon.getBalance("HNw2nrmkXdpE8sCD26VyMvjLg5RsBRUY")
         console.log(balance)
+
+        let txs1 = await hycon.getTxsOfAddress({
+            address: "HNw2nrmkXdpE8sCD26VyMvjLg5RsBRUY",
+            pagination: 1
+        })
+        console.log(txs1)
+
     } catch (err) {
         console.log(err)
     }

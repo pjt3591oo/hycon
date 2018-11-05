@@ -43,8 +43,15 @@ class Hycon {
     }
 
     async _getAddressInfo(address) {
-        return await this.address.getBalance({
+        return await this.address.getAddressInfo({
             address: address
+        })
+    }
+
+    async getTxsOfAddress({address, pagination}) {
+        return await this.address.getTxsOfAddress({
+            address: address,
+            pagination: pagination
         })
     }
 
